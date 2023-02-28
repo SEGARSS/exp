@@ -5,7 +5,7 @@
 // }
 // Method1();
 
-    
+
 // Вид2
 // void Method2(string msg)
 // {
@@ -109,7 +109,7 @@
 // newText = RepLace(newText, 'к', 'К');
 // Console.WriteLine(newText);
 
-int[] arr ={1,5,4,3,2,6,7,1,1};
+int[] arr = { 1, 5, 4, 3, 2, 6, 7, 1, 1 };
 
 void PrintArray(int[] array)
 {
@@ -124,15 +124,15 @@ void PrintArray(int[] array)
 
 void SelectionSort(int[] array)
 {
-    for (int i = 0; i < array.Length -1; i++)
+    for (int i = 0; i < array.Length - 1; i++)
     {
         int minPosition = i;
-        
+
         for (int j = i + 1; i < array.Length; j++)
         {
-            if(array[i] < array[minPosition]) minPosition = j;
+            if (array[i] < array[minPosition]) minPosition = j;
         }
-        
+
         int temporary = array[i];
         array[i] = array[minPosition];
         array[minPosition] = temporary;
@@ -143,5 +143,3 @@ PrintArray(arr);
 SelectionSort(arr);
 
 PrintArray(arr);
-
-
